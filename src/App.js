@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./components/Header/Header";
 import HeaderButton from "./components/HeaderButtons/HeaderButton";
-import ParticleBackground from "./ParticleBackground";
+import Background from "./Background";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <HeaderButton title={'Personal Projects'}></HeaderButton>
       <HeaderButton title={'Cool Stuff'}></HeaderButton>
 
-      <ParticleBackground />
+      <Background />
       {/* <CenterTitle /> */}
     </div>
   );
