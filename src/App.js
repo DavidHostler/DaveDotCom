@@ -25,12 +25,24 @@ import Typist from 'react-typist';
 function Home() {
   return (
     <div style={{ padding: 20 }}>
-      <h2>Home View</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adip.</p>
+
+    <Centre/>
+      {/* <h2>Home View</h2> */}
+      {/* <p>Lorem ipsum dolor sit amet, consectetur adip.</p> */}
     </div>
   );
 }
 
+
+function Centre() {
+  return (
+    <div id="text_div center_all">
+      <div className="center_all">
+        <h1 className="custom-subTitle">David Hostler</h1>
+      </div>
+    </div>
+  );
+}
 
 function App() {
   return (
@@ -39,7 +51,7 @@ function App() {
       <nav style={{ margin: 10 }}>
         <ul>
         <Link to="/" style={{ padding: 5 }}>
-          Home
+          <HeaderButton title="Home">Home</HeaderButton>
         </Link>
         <Link to="/Projects" style={{ padding: 5 }}>
           <HeaderButton title="Projects">
@@ -62,6 +74,7 @@ function App() {
         </Route>
       </Routes>
       <Background/>
+      
     </Router>
   );
 }
