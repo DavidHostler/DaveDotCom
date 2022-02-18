@@ -1,4 +1,5 @@
 import classes from './css/AboutMe.module.css';
+
 // import Leaf from './images/mapleleaf.png';
 const AboutMe = () => {
     
@@ -6,13 +7,16 @@ const AboutMe = () => {
 
       <div className="center_all">
         
-        <h1 className="custom-subTitle"> About Me </h1>
-        <h2>Hey There!</h2>
+        <h1 className={classes['center']}> About Me </h1>
+        <h2  className={classes['center']}>Hey There!</h2>
+      <p>  
         <h5>
     I'm David. I am a developer from Toronto, Ontario with a background in undergraduate
     Physics and Mathematics, and a huge nerd all around. During my last few years at uni, 
     I developed an interest in software development and data science after learning Python.
-
+      </h5>
+      </p>
+      <h5>
     Some of my current technical skills include full-stack web development, machine learning and 
     wherever I can apply logic to solve a scalable problem. 
         </h5>
@@ -21,8 +25,8 @@ const AboutMe = () => {
     music theory and electric guitar, history and random trivia.
         </h5>
 
-      <div>
-        <h2>
+      <div  className={classes['center']}>
+        <h2 >
           Past Experience
         </h2>
       </div>
