@@ -20,6 +20,7 @@ import AboutMe from './screens/AboutMe';
 
 import Typist from 'react-typist';
 
+import Projects from './screens/data/Projects';
 
 
 function Home() {
@@ -53,9 +54,14 @@ function App() {
         <Link to="/" style={{ padding: 5 }}>
           <HeaderButton title="Home">Home</HeaderButton>
         </Link>
-        <Link to="/Projects" style={{ padding: 5 }}>
+        {/* <Link to="/Projects" style={{ padding: 5 }}>
           <HeaderButton title="Projects">
           Projects  
+          </HeaderButton>
+        </Link> */}
+        <Link to="/Projects">
+          <HeaderButton title="Projects">
+            Projects
           </HeaderButton>
         </Link>
         <Link to="/AboutMe" style={{ padding: 5 }}>
@@ -68,7 +74,9 @@ function App() {
       {/* Rest of the code remains same */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Projects" element={<ProjectsScreen />} />
+        {/* <Route path="/Projects" element={<ProjectsScreen />} /> */}
+
+        <Route path="/Projects" element = {<Projects/>}/>
         <Route path="/AboutMe" element={<AboutMe />}>
           {/* <Route path=":slug" element={<Post />} /> */}
         </Route>

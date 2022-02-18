@@ -3,7 +3,6 @@ import classes from './css/AboutMe.module.css';
 const AboutMe = () => {
     
     return (
-        
 
       <div className="center_all">
         
