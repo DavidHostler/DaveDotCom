@@ -6,9 +6,7 @@ const AboutMe = () => {
     return (
 
       <div className="center_all">
-        
-        <h1 className={classes['center']}> About Me </h1>
-        <h2  className={classes['center']}>Hey There!</h2>
+        <h2  className={classes['center']}>About Me</h2>
       <p>  
         <h5>
     I'm David. I am a developer from Toronto, Ontario with a background in undergraduate

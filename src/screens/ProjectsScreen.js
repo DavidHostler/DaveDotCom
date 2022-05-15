@@ -30,7 +30,6 @@ var draco = new ProjectData(
     'This one is a favorite for a couple of reasons. I was attempting to implement a Reinforcement Learning agent using a technique called Deep Deterministic Policy Gradients or DDPG for short. I wanted to maximize the speed of my agent as well. Python is known to run about ~ 20 times more slowly than C/C++, so I figured that I would implement my solution in C++ using my current understanding of the Python code at the time. In doing so, I ran into a few build issues with the Tensorflow C API and figured that since DDPG only uses deep hidden layers (i.e. linear transformations of the form Ax + b = y, where A is a matrix a.k.a. "weights"", x is the input tensor, b is the bias) This project allowed me to play around with a super fast RL simulation and learn more about the direct behaviour of deep learning models from a mathematical point of view, as I had to hard-code the linear transformations and take the derivatives of activation functions numerically. If using this model, depending on the user architecture you might want to consider implementing a Big Float datatype to prevent Nan values as weights, biases or gradients.'
 );
 
-
 function ProjectDetails(props){
     return(
         <div className="center_all">

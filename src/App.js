@@ -8,7 +8,7 @@ import {
   Outlet,
   useParams
 } from 'react-router-dom';
-
+import Dave from './screens/data/Dave.jpg';
 
 import "./App.css";
 import Header from "./components/Header/Header";
@@ -39,7 +39,12 @@ function Centre() {
   return (
     <div id="text_div center_all">
       <div className="center_all">
-        <h1 className="custom-subTitle">David Hostler</h1>
+        <h2 className="custom-subTitle"
+        style={{textAlign: 'center'}}
+        >David Hostler</h2>
+        <img src={Dave}
+        style={{borderRadius: '50%'}}
+        />
       </div>
     </div>
   );

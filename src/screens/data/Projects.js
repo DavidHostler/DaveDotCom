@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import ProjectData from './ProjectData';
 import classes from '../css/Projects.module.css';
+import github from './github.png';
+import Button from 'react-bootstrap/Button';
+import { alignPropType } from "react-bootstrap/esm/types";
 
 
 
@@ -23,7 +26,14 @@ const Projects = () => {
         'This one is a favorite for a couple of reasons. I was attempting to implement a Reinforcement Learning agent using a technique called Deep Deterministic Policy Gradients or DDPG for short. I wanted to maximize the speed of my agent as well. Python is known to run about ~ 20 times more slowly than C/C++, so I figured that I would implement my solution in C++ using my current understanding of the Python code at the time. In doing so, I ran into a few build issues with the Tensorflow C API and figured that since DDPG only uses deep hidden layers (i.e. linear transformations of the form Ax + b = y, where A is a matrix a.k.a. "weights"", x is the input tensor, b is the bias) This project allowed me to play around with a super fast RL simulation and learn more about the direct behaviour of deep learning models from a mathematical point of view, as I had to hard-code the linear transformations and take the derivatives of activation functions numerically. If using this model, depending on the user architecture you might want to consider implementing a Big Float datatype to prevent Nan values as weights, biases or gradients.'
     );
 
-    const projects = [gauss, milk, draco];
+    
+    var nattyornot = new ProjectData(
+        'Natty Or Not',
+        'https://github.com/DavidHostler/NattyOrNot/tree/master',
+        'Here, I have implemented a very heavy full stack web application for the purpose of determining whether somebody is a natural or enhanced lifter. I wrote and trained a binary classifier network in Tensorflow on images of professional bodybuilders and on those of average-to-decent physiques. Additionally, I set up a set of REST API endpointsusing Django with Python3 to enable users to interact with the neural network from behind the webpage. A simple webpage in ReactJS is also written, with instructions to allow a user to upload a picture of any physique and obtain a prediction as to whether the image is of a natural or enhanced lifter. It is purely for entertainment and is not meant to be used in lieu of a real drug test.'
+    )
+
+    const projects = [gauss, milk, draco, nattyornot];
     const [project, setProjects] = useState("");
 
     return (
@@ -34,6 +44,14 @@ const Projects = () => {
             
         {projects.map(project=>(
         <button 
+
+        style={{color:"#000000",
+                backgroundColor:"#d4af37",
+                // borderRadius: '15px',
+                // border: 'none',
+         margin: "1%", boxShadow: "5px 5px 3px rgba(46, 46, 46, 0.62)"}} 
+        
+        className="custom_subtitle"
         type="button"
         key={project}
         
@@ -48,13 +66,28 @@ const Projects = () => {
                 <div className = "center_all">
                     <h1 className={classes['center']}>{project.title}</h1>
 
-                    <h2 className={classes['center']}>
+                    {/* <h2 className={classes['center']}>
                         <a href = {project.link}
                         className={classes['hyperlink']}
                         >
+                    
                         {project.link}
                         </a>
-                    </h2>
+                    </h2> */}
+                    <div className={classes['center']}>
+                    <a href = {project.link}
+                        className={classes['hyperlink']}
+                        >
+                    <img src={github}
+                    
+                    // 'https://static01.nyt.com/images/2016/09/28/us/28xp-pepefrog/28xp-pepefrog-superJumbo.jpg'
+                    style={{borderRadius: '50%',
+                            height:'50px',
+                            width: '50px'}}/>
+                       
+                        </a>
+                    </div>
+                    
 
                     <h5>{project.body}</h5>
                 </div>
