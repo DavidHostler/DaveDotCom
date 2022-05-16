@@ -10,6 +10,9 @@ import {
 } from 'react-router-dom';
 import Dave from './screens/data/Dave.jpg';
 
+import { bounce } from 'react-animations';
+import styled, { keyframes } from 'styled-components';
+
 import "./App.css";
 import Header from "./components/Header/Header";
 import HeaderButton from "./components/HeaderButtons/HeaderButton";
@@ -34,17 +37,25 @@ function Home() {
   );
 }
 
+const Bounce = styled.div`animation: 2s ${keyframes `${bounce}`} infinite`;
 
 function Centre() {
   return (
     <div id="text_div center_all">
       <div className="center_all">
-        <h2 className="custom-subTitle"
-        style={{textAlign: 'center'}}
-        >David Hostler</h2>
+        <Bounce>
+        
         <img src={Dave}
         style={{borderRadius: '50%'}}
         />
+        </Bounce>
+        <h2 className="custom-subTitle"
+        style={{textAlign: 'center'}}>
+        David Hostler
+        </h2> 
+
+      
+  
       </div>
     </div>
   );
