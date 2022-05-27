@@ -5,6 +5,10 @@ import github from './github.png';
 import Button from 'react-bootstrap/Button';
 import { alignPropType } from "react-bootstrap/esm/types";
 
+//Make the Github logo bounce
+import { bounce } from 'react-animations';
+import styled, { keyframes } from 'styled-components';
+const BounceGithub = styled.div`animation: 2s ${keyframes `${bounce}`} infinite`;
 
 
 const Projects = () => {
@@ -78,18 +82,34 @@ const Projects = () => {
                     <a href = {project.link}
                         className={classes['hyperlink']}
                         >
+                    <BounceGithub>
                     <img src={github}
                     
                     // 'https://static01.nyt.com/images/2016/09/28/us/28xp-pepefrog/28xp-pepefrog-superJumbo.jpg'
                     style={{borderRadius: '50%',
                             height:'50px',
                             width: '50px'}}/>
+                    </BounceGithub>
                        
                         </a>
                     </div>
                     
 
-                    <h5>{project.body}</h5>
+                        <p 
+                        style={{
+                            display: 'block',
+                            marginTop: '1em',
+                            marginBottom: '1em',
+                            marginLeft: '2rem',
+                            marginRight: '2rem'
+                        }}
+                        >
+
+                        <h5>
+                        {project.body}
+                        </h5>
+
+                        </p>
                 </div>
 
         </div>

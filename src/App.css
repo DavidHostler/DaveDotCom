@@ -16,3 +16,9 @@
   position: absolute;
   color: white;
 }
+
+.bubble_image{
+  width:  225px;
+  height:  225px;
+  border-radius:50%;
+}

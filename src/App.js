@@ -9,6 +9,7 @@ import {
   useParams
 } from 'react-router-dom';
 import Dave from './screens/data/Dave.jpg';
+import MapleJack from './screens/images/MapleJack.jpg';
 
 import { bounce } from 'react-animations';
 import styled, { keyframes } from 'styled-components';
@@ -44,15 +45,26 @@ function Centre() {
     <div id="text_div center_all">
       <div className="center_all">
         <Bounce>
-        
         <img src={Dave}
-        style={{borderRadius: '50%'}}
+        className='bubble_image'
         />
+        {/* <img src={MapleJack} 
+        className='bubble_image'
+
+          /> */}
         </Bounce>
+        {/* <Bounce>
+          
+        </Bounce> */}
         <h2 className="custom-subTitle"
         style={{textAlign: 'center'}}>
         David Hostler
-        </h2> 
+        </h2>
+
+        {/* <h1 className="custom-subTitle"
+        style={{textAlign: 'center'}}>
+        Happy Victoria Day!
+        </h1>  */}
 
       
   
