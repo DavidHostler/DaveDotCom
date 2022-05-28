@@ -15,7 +15,7 @@ const Projects = () => {
     var milk = new ProjectData(
         'Milk',
         'https://github.com/DavidHostler/Milk',
-        'Milk (it is a weird name I know, but some people like a nice glass of Milk now and then). This is a super resolution generative adversarial network that receives an image of a given size, and uses deep learning to "hallucinate" a more high resolution version of that image.'
+        'Milk (it is a weird name I know, but some people like a nice glass of Milk now and then). This is a super resolution generative adversarial network that receives an image of a given size, and uses deep learning to "hallucinate" a more high resolution version of that image. This project is built on ExpressJS  with HTML and CSS, and uses a pretrained GAN model based off of the Pytorch website. That being said, while I did not train this model, I figured it would be a cool starting point to use for demonstration purposes.'
     );
     
     var gauss = new ProjectData(
@@ -39,6 +39,23 @@ const Projects = () => {
 
     const projects = [gauss, milk, draco, nattyornot];
     const [project, setProjects] = useState("");
+
+    // if(project == ""){
+    //     return(
+    //        <div>
+    //             <h2>Please Click On One Of The Project Buttons In The Upper Left Corner of Your Screen!</h2>
+    //        </div>
+    //     )
+    // }
+    
+    function isButtonClicked(){
+        if(project == ""){
+            return "Please click one of the project buttons!";
+        }
+        else{
+            console.log("Keep calm and carry on, tovarisch!")
+        }
+    }
 
     return (
 
@@ -82,6 +99,7 @@ const Projects = () => {
                     <a href = {project.link}
                         className={classes['hyperlink']}
                         >
+                    
                     <BounceGithub>
                     <img src={github}
                     

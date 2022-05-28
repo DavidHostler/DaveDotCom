@@ -45,9 +45,11 @@ function Centre() {
     <div id="text_div center_all">
       <div className="center_all">
         <Bounce>
+        <a href={'https://www.linkedin.com/in/david-hostler-a8480b12b/'}>
         <img src={Dave}
         className='bubble_image'
         />
+        </a>
         {/* <img src={MapleJack} 
         className='bubble_image'
 
@@ -60,6 +62,7 @@ function Centre() {
         style={{textAlign: 'center'}}>
         David Hostler
         </h2>
+        
 
         {/* <h1 className="custom-subTitle"
         style={{textAlign: 'center'}}>
