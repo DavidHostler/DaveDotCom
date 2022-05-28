@@ -6,9 +6,14 @@ import Button from 'react-bootstrap/Button';
 import { alignPropType } from "react-bootstrap/esm/types";
 
 //Make the Github logo bounce
-import { bounce } from 'react-animations';
+import { bounce, fadeIn } from 'react-animations';
 import styled, { keyframes } from 'styled-components';
 const BounceGithub = styled.div`animation: 2s ${keyframes `${bounce}`} infinite`;
+
+const FadeIn = styled.div`
+    animation: ${keyframes `${fadeIn}`} 3.5s;    
+`
+
 
 
 const Projects = () => {
@@ -68,7 +73,9 @@ const Projects = () => {
 
         style={{color:"#000000",
                 backgroundColor:"#d4af37",
-                // borderRadius: '15px',
+                borderRadius: '15px',
+                position: 'relative',
+                left: '50px',
                 // border: 'none',
          margin: "1%", boxShadow: "5px 5px 3px rgba(46, 46, 46, 0.62)"}} 
         
@@ -122,13 +129,16 @@ const Projects = () => {
                             marginRight: '2rem'
                         }}
                         >
+            <FadeIn>
 
                         <h5>
                         {project.body}
                         </h5>
+                        </FadeIn>
 
                         </p>
                 </div>
+
 
         </div>
     )

@@ -12,7 +12,7 @@ import Dave from './screens/data/Dave.jpg';
 import DaveTransition from './animations/DaveTransition';
 import MapleJack from './screens/images/MapleJack.jpg';
 
-import { bounce, rollIn } from 'react-animations';
+import { bounce, rollIn, fadeIn } from 'react-animations';
 import styled, { keyframes } from 'styled-components';
 
 import "./App.css";
@@ -28,6 +28,21 @@ import Typist from 'react-typist';
 import Projects from './screens/data/Projects';
 
 
+//React Animations (Courtesy of Formidable.com)
+ 
+// const RollInAnimation = keyframes`${RollIn}`;
+const RollIn = styled.div`
+  animation: ${keyframes `${rollIn}`} 3.5s; 
+`;
+
+
+const FadeIn = styled.div`
+    animation: ${keyframes `${fadeIn}`} 3.5s;    
+`
+
+
+
+
 function Home() {
   return (
     <div style={{ padding: 20 }}>
@@ -40,13 +55,7 @@ function Home() {
 }
 
 
-//React Animations (Courtesy of Formidable.com)
-const Bounce = styled.div`animation: 2s ${keyframes `${bounce}`} infinite`;
- 
-// const RollInAnimation = keyframes`${RollIn}`;
-const RollIn = styled.div`
-  animation: ${keyframes `${rollIn}`} 3.5s; 
-`;
+
 
 function Centre() {
   // var entrance = keyframes `
@@ -76,11 +85,12 @@ function Centre() {
         </a>
         
         {/* </Bounce> */}
-        
+        <FadeIn>
         <h2 className="custom-subTitle"
         style={{textAlign: 'center'}}>
         David Hostler
         </h2>
+        </FadeIn>
         
 
         {/* <h1 className="custom-subTitle"
