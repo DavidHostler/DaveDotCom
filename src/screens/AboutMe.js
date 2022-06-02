@@ -5,7 +5,7 @@ const AboutMe = () => {
     
     return (
 
-      <div className="center_all">
+      <div className="center">
                 <h1 className={classes["title-sections"]}>About Me</h1>
       <p className={classes["paragraphs"]}>  
         <h5>
@@ -16,8 +16,8 @@ const AboutMe = () => {
       </p>
     <p className={classes["paragraphs"]}>
       <h5>
-    Some of my current technical skills include full-stack web development, machine learning and 
-    wherever I can apply logic to solve a scalable problem. 
+    Some of my current technical skills include front end and back end web development, machine learning, 
+    algorithms and data structures, error debugging, and causing people to cringe at my dad jokes.
         </h5>
     </p>
     <p className={classes["paragraphs"]}>
@@ -56,7 +56,34 @@ const AboutMe = () => {
 
         </p>
       </div>
+
       
+      <h1 className={classes["title-sections"]}>Personal Life</h1>
+      <p className={classes["paragraphs"]}>  
+        <h5>
+        I've got hobbies. Most people think programmers and STEM people in general have very boring hobbies. 
+        I tend to disagree. 
+        Every year, I try to make the biggest metal show in Ontario even if it means booking time out of town. 
+        In 2022 alone, within the span of less than two months I saw both Judas Priest and Megadeth live! 
+        
+        Additionally, I've been into fitness for a few years now. Whenever I can, I get friends to join me  
+        at the gym. Mainly because I need a spotter! 
+        This was a big motivator for the Natty Or Not application, which you can read more about in the  
+        projects section of this site. 
+
+        
+        Other stuff I do in my spare time is lacklustre in comparison- I hit the beach every week in the summer, 
+        go on the occasional date or movie night, or see some indie bands perform live at a dive bar. 
+        And then there's solving math problems, solving programming problems, and of course using programming to solve  
+        math problems.
+
+        
+
+
+
+          
+      </h5>
+      </p>
     </div>
     
         

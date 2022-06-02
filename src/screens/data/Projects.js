@@ -66,8 +66,10 @@ const Projects = () => {
 
         <div>
 
+        <FadeIn>
+
         <div>
-            
+            {/* This is where the project buttons are mapped */}
         {projects.map(project=>(
         <button 
 
@@ -76,6 +78,7 @@ const Projects = () => {
                 borderRadius: '15px',
                 position: 'relative',
                 left: '50px',
+                // top:'225px',
                 // border: 'none',
          margin: "1%", boxShadow: "5px 5px 3px rgba(46, 46, 46, 0.62)"}} 
         
@@ -91,6 +94,8 @@ const Projects = () => {
 
 
         </div>    
+        </FadeIn>
+
                 <div className = "center_all">
                     <h1 className={classes['center']}>{project.title}</h1>
 
@@ -106,7 +111,7 @@ const Projects = () => {
                     <a href = {project.link}
                         className={classes['hyperlink']}
                         >
-                    
+                    <FadeIn>
                     <BounceGithub>
                     <img src={github}
                     
@@ -115,6 +120,7 @@ const Projects = () => {
                             height:'50px',
                             width: '50px'}}/>
                     </BounceGithub>
+                    </FadeIn>
                        
                         </a>
                     </div>
