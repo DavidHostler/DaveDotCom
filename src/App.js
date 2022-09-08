@@ -22,7 +22,7 @@ import ProjectScreen from './screens/ProjectsScreen';
 import Background from "./Background";
 import ProjectsScreen from "./screens/ProjectsScreen";
 import AboutMe from './screens/AboutMe';
-
+import Stack from './screens/Stack';
 import Typist from 'react-typist';
 
 import Projects from './screens/data/Projects';
@@ -130,6 +130,13 @@ function App() {
           About Me
           </HeaderButton>
         </Link>
+        {/* Stack Page */}
+        <Link to="/Stack" style={{padding: 5 }} >
+          <HeaderButton title="Stack">
+          Stack
+          </HeaderButton>
+        </Link>
+        
         </ul>
       </nav>
       {/* Rest of the code remains same */}
@@ -138,9 +145,11 @@ function App() {
         {/* <Route path="/Projects" element={<ProjectsScreen />} /> */}
 
         <Route path="/Projects" element = {<Projects/>}/>
-        <Route path="/AboutMe" element={<AboutMe />}>
+        <Route path="/AboutMe" element={<AboutMe />}/>
+        <Route path="/Stack" element={<Stack />}/>
+        
           {/* <Route path=":slug" element={<Post />} /> */}
-        </Route>
+        {/* </Route> */}
       </Routes>
       <Background/>
       
