@@ -19,7 +19,7 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import HeaderButton from "./components/HeaderButtons/HeaderButton";
 import ProjectScreen from './screens/ProjectsScreen';
-import Background from "./Background";
+// import Background from "./Background";
 import ProjectsScreen from "./screens/ProjectsScreen";
 import AboutMe from './screens/AboutMe';
 import Stack from './screens/Stack';
@@ -151,7 +151,7 @@ function App() {
           {/* <Route path=":slug" element={<Post />} /> */}
         {/* </Route> */}
       </Routes>
-      <Background/>
+      {/* <Background/> */}
       
     </Router>
   );
