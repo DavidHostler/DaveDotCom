@@ -9,49 +9,38 @@ const AboutMe = () => {
                 <h1 className={classes["title-sections"]}>About Me</h1>
       <p className={classes["paragraphs"]}>  
         <h5>
-    I'm David. I am a developer from Toronto, Ontario with a background in undergraduate
-    Physics and Mathematics, and a huge nerd all around. During my last few years at uni, 
-    I developed an interest in software development and data science after learning Python.
+          <p>
+          My formal education was as a specialist in Physical and Mathematical 
+          Sciences (Physics) at the University of Toronto, where I obtained my 
+          Bachelor of Science. During my attendance, I served as a teaching assis-
+          tant for multiple Physics and Mathematics classes, and then did volunteer
+          research assistance for the UTSC material sciences projects
+          shortly after graduating.  
+          </p> 
+    
+          <p>
+          During the course of studying, I picked up skills in a number of additional areas, 
+          namely numerical methods, general computer science, and machine learning. Many classes
+          required me to become proficient in Python to numerically solve different systems of 
+          differential equations. 
+          </p>
+
+          <p>
+          After realizing I needed to greatly improve this skill (I wasn't very good at programming!),
+          I practised regularly, and even obtained a Udemy certification from Jose Portilla's Python For 
+          Data Science course. Additionally, I picked up Javascript, C++, SQL, and a few other languages 
+          and frameworks while my province was in lockdowns, and became very proficient with React, Django, 
+          Flask, PostgreSQL, SQLite, AWS and OpenCV for image processing.
+          </p>
       </h5>
       </p>
-    <p className={classes["paragraphs"]}>
-      <h5>
-    Some of my current technical skills include front end and back end web development, machine learning, 
-    algorithms and data structures, error debugging, and causing people to cringe at my dad jokes.
-        </h5>
-    </p>
-    <p className={classes["paragraphs"]}>
-        <h5>
-    In addition to the technical stuff, I have a few amateur interests including fitness, 
-    music theory and electric guitar, history and random trivia.
-        </h5>
-    </p>
-
-      <div  className={classes["center"]}>
-        <h1 className={classes["title-sections"]}>
-          Past Experience
-        </h1>
-      </div>
-
-      <div>
-      <p className={classes["paragraphs"]}>
-       <h5>
-          As mentioned, I studied at UofT. Additionally, I have worked many jobs while finishing my degree
-          and shortly thereafter, including telemarketing, sales, construction, being a teaching assistant, working as a 
-          school crossing guard, and more recently as a fullstack developer. 
-        </h5>
-       </p>
-      </div>
-
+    
       <div>
     <p className={classes["paragraphs"]}>
         
         <h5>
-          Outside of work, I'm an avid gym goer. I make time for exercise as often as possible,
-          as it provides the routine necessary to form a well-structured schedule, and hopefully keeps
-          me on this earth just a little longer. Between that and guitar practice, I managed to maintain
-          some semblance of normalcy throughout the pandemic in Ontario.
 
+      
         </h5>
 
         </p>
@@ -59,30 +48,44 @@ const AboutMe = () => {
 
       
       <h1 className={classes["title-sections"]}>Personal Life</h1>
-      <p className={classes["paragraphs"]}>  
+      <p className={classes["paragraphs"]}> 
+
         <h5>
-        I've got hobbies. Most people think programmers and STEM people in general have very boring hobbies. 
-        I tend to disagree. 
-        Every year, I try to make the biggest metal show in Ontario even if it means booking time out of town. 
-        In 2022 alone, within the span of less than two months I saw both Judas Priest and Megadeth live! 
-        
-        Additionally, I've been into fitness for a few years now. Whenever I can, I get friends to join me  
-        at the gym. Mainly because I need a spotter! 
-        This was a big motivator for the Natty Or Not application, which you can read more about in the  
-        projects section of this site. 
+        <p>
+          Currently I have been doing a mix of freelance software (web and mobile) 
+          development, as well as tutoring math and science intermittently. 
+          While this lifestyle is comfortable, I'm currently hoping for a more stable,
+          safe longterm position in the right company going forward.
+        </p>
 
-        
-        Other stuff I do in my spare time is lacklustre in comparison- I hit the beach every week in the summer, 
-        go on the occasional date or movie night, or see some indie bands perform live at a dive bar. 
-        And then there's solving math problems, solving programming problems, and of course using programming to solve  
-        math problems.
+        <p>
+          My technical interests so far encompass a mix of Software Engineering and Data Science.
+          It is my belief also that many Software Engineers may be forced to learn Data Science 
+          and machine learning techniques in the near future, so a company would benefit from having 
+          an engineer with a mix of both skill sets... such as myself!
 
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
           
-      </h5>
+        </p>
+        </h5>  
+        
       </p>
     </div>
     
