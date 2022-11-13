@@ -23,7 +23,7 @@ import ProjectScreen from './screens/ProjectsScreen';
 import ProjectsScreen from "./screens/ProjectsScreen";
 import AboutMe from './screens/AboutMe';
 import Stack from './screens/Stack';
-import Typist from 'react-typist';
+// import Typist from 'react-typist';
 
 import Projects from './screens/data/Projects';
 
