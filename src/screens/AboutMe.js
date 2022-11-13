@@ -62,7 +62,8 @@ const AboutMe = () => {
           My technical interests so far encompass a mix of Software Engineering and Data Science.
           It is my belief also that many Software Engineers may be forced to learn Data Science 
           and machine learning techniques in the near future, so a company would benefit from having 
-          an engineer with a mix of both skill sets... such as myself!
+          an engineer with a mix of both skill sets. It is to this end that I have attempted to optimize 
+          my skill set to remain competitive as an engineer both now and in the fascinating world to come.
 
 
 
