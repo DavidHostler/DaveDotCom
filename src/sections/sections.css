@@ -1,0 +1,52 @@
+.home{
+    background-color: black;
+    height: 100%;
+    color:white;
+    height: 100vh;
+
+}
+
+.name{
+    font-size: 5em;
+    text-align: center;
+    color:'white';
+    /* background-color: black; */
+}
+
+
+.about-me{
+    font-size: 5em;
+    text-align: center;
+    color:'white';
+}
+
+
+h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.horizontal-list {
+    position: absolute;
+    text-align: center;
+    left:35vw;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.hl-component {
+    float: left;
+    /* color:white; */
+    /* padding-top: 5vh; */
+    /* padding-bottom: 5vh; */
+    /* padding-left: 4.5vw; */
+    font-size: 3.5vh;
+}
+
+
+.paragraph{
+    padding-right: 20vw;
+    padding-left: 20vw;
+
+}
