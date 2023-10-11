@@ -12,7 +12,8 @@ const Home = () => {
             className='name'
             >David Hostler</h1>
 
-            <h2>Machine Learning Engineer</h2>
+            {/* <h2>Machine Learning Engineer</h2> */}
+            <h2>Software Engineer</h2>
             <ul style={{paddingLeft:'32.5vw', backgroundColor:'black'}}>
             <li
             ><a href='https://github.com/DavidHostler'><h3>Github</h3></a></li>

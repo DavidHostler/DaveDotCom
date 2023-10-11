@@ -1,0 +1,32 @@
+export default {
+    frameworks: [
+        {
+          level:75,
+          skill:'Pytorch'
+        },
+        {
+          level:85,
+          skill:'Tensorflow'
+        },
+        {
+          level:50,
+          skill:'Scikit-Learn'
+        },
+        {
+          level:40,
+          skill:'Pandas'
+        },
+        {
+          level:78,
+          skill:'Numpy'
+        },
+        {
+          level:75,
+          skill:'Spark'
+        },
+        {
+          level:45,
+          skill:'Kafka'
+        }
+      ]
+}
