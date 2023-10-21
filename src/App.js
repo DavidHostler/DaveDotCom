@@ -6,6 +6,7 @@ import Home from './sections/Home';
 import About from './sections/About';
 import Projects from './sections/Projects';
 import DataScience from './sections/DataScience';
+import Experience from './sections/Experience';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Route path="about" element={ <About/> } />
         <Route path="projects" element={ <Projects/> } />
         <Route path="data-science" element={ <DataScience/> } />
-
+        <Route path="experience" element={<Experience/>}/>
       </Routes>
     </div>
   );

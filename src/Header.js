@@ -26,9 +26,12 @@ const Header = () => {
                 <li>
                     <Link to="/projects">Projects</Link>
                 </li>
-                {/* <li>
-                    <Link to="/data-science">Data Science</Link>
-                </li> */}
+                <li>
+                    <Link to="/data-science">Skills</Link>
+                </li>
+                <li>
+                    <Link to="/experience">Experience</Link>
+                </li>
             </ul>
             
         </div>

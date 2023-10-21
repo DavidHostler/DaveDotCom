@@ -16,14 +16,14 @@ const data = [
         name:'Autopilot',
         imagePath:'https://png.pngtree.com/background/20230417/original/pngtree-robot-future-world-cyberpunk-style-background-picture-image_2446170.jpg',
         github:'https://github.com/DavidHostler/AutopilotAI',
-        description:'Client-Side Python application for gamers. Uses Recurrent LSTM neural network to learn driving patterns of GTA 5 and Forza players, and then to take the wheel briefly so that they can go answer the door to get a pizza',
+        description:'Self-driving AI bot for driving based videogames',
         procedure:"Wrote a Python keylogger. Got permission to install on friend's RTX 2080 gaming PC. Wrote data pipeline to collect timestamps of user keystrokes for training the AI. In order to optimize training, implemented training data as a Martingale from stochastic calculus as used in finance to make predictions during options trading."
     },
     {
         name:'Draco',
         imagePath:'https://cdna.artstation.com/p/assets/images/images/030/987/842/large/sam-chan-art-r1-samchan.jpg',
         github:'https://github.com/DavidHostler/Draco',
-        description:'Low-level deep learning model deployment framework written from scratch in C++. Done as a personal project to teach myself more about both AI and Object-Oriented Programming in C++',
+        description:'Open-source framework for deploying deep learning models in C++ in embedded systems.',
         procedure:"Wrote Layer classes, implementing a deep neural network as a Doubly-Linked List such that each hidden Layer is a Node of the data structure. The forward pass is done by traversing the list forward, whereas backpropagation is done by computing the matrix derivatives of the loss function at each layer and traversing in the opposite direction back toward the head of the Linked List."
     },
     // {

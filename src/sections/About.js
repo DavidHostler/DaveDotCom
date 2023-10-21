@@ -21,36 +21,17 @@ const About = () => {
           <ul>
             <li>
                 <p className='paragraph'>
-                    I'm David, a Software Engineer
-                    from Toronto, Canada.
-                    
+                I'm David, a Software Engineer from Canada.
+    
                 </p>
                 <p className='paragraph'>
-                    Some of my more recent work experience includes being CTO at PreemptorAI, 
-                    joining EquoAI as an ML Engineer, working as an e-commerce web-developer, 
-                    and having been a private Physics, Chemistry,  Computer Science teacher at one point.
+                Interests include machine learning, object oriented programming, system design, 
+                automation and heavy metal music.
                 </p>
                 <p className='paragraph'>
-
-                    Additionally, I have worked on two other startups previously, one as far back as 2019/2020, 
-                    one in the grocery delivery space and another having been a Metaverse company in 2021.
-                    Prior to landing roles in tech, I was a research assistant with the University of Toronto,
-                    working on using ML models to predict properties of atomic structures.
+                    Thanks for visiting :)
                 </p>
-                <p className='paragraph'>
-                    Currently, I specialize in the deployment of ML models, and in designing 
-                    event-driven applications and microservice architectures for various products, 
-                    combining a mix of advanced back end developer skill with intermediate data engineering. 
-                    
-                    
-                </p>
-                <p className='paragraph'>
-                    In my spare time, I'm passionate about fitness, world history, mathematics,
-                    and heavy music. Personally I wish to learn more about the cognitive theory behind 
-                    Large Language Models and applications of the Transformer model architecture
-                    to time-series analysis.
-                </p>
-                
+                 
             </li>
             <li>
                 {/* <img src={Chad}
