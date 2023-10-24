@@ -28,7 +28,7 @@ const buttonStyle = {
 const Button = (props) =>{
     return(
         <button style={{...buttonStyle}} onClick={props.func}>
-            View Skills
+            Toggle Skills
         </button>
     )
 }

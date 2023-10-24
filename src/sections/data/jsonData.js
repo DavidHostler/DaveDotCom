@@ -1,33 +1,57 @@
 export default {
     frameworks: [
         {
-          level:75,
+          level:95,
           skill:'Pytorch'
         },
         {
-          level:85,
+          level:95,
           skill:'Tensorflow'
         },
         {
-          level:50,
+          level:90,
           skill:'Scikit-Learn'
         },
         {
-          level:40,
+          level:90,
           skill:'Pandas'
         },
         {
-          level:78,
+          level:95,
           skill:'Numpy'
         },
         {
-          level:75,
+          level:85,
           skill:'Spark'
         },
         {
-          level:45,
+          level:75,
           skill:'Kafka'
-        }
+        },
+        {
+          level:95,
+          skill:'React'
+        },
+        {
+          level:85,
+          skill:'Django'
+        },
+        {
+          level:90,
+          skill:'Flask'
+        },
+        {
+          level:95,
+          skill:'Node'
+        },
+        {
+          level:78,
+          skill:'.NET'
+        },
+        {
+          level:85,
+          skill:'Spring Boot'
+        },
       ],
       programmingLanguages:[
 
@@ -48,7 +72,7 @@ export default {
         skill:'Javascript'
       },
       {
-        level:92,
+        level:85,
         skill:'SQL'
       },
       {
@@ -56,29 +80,14 @@ export default {
         skill:'C#'
       },
       {
-        level:75,
-        skill:'React'
-      },
-      {
-        level:85,
-        skill:'Django'
-      },
-      {
-        level:50,
-        skill:'Flask'
-      },
-      {
-        level:40,
-        skill:'Spring Boot'
-      },
-      {
         level:78,
-        skill:'.NET'
+        skill:'Bash'
       },
       {
-        level:75,
-        skill:'Node'
-      },
+        level:80,
+        skill:'Scala'
+      }
+      
       
 
     ],

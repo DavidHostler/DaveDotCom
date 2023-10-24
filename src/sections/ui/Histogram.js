@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 // import ReactDOM from 'react-dom';
 // import Button from 'react-bootstrap/Button';
 
@@ -17,7 +17,9 @@ const containerStyle = {
 
 const spaceStyle = {
     // background: '#ffffff',
-    transition: '0.3s'
+    // position:'relative',
+    // left:'5vw',
+    transition: '1.0s'
 };
 
 const barStyle = {
@@ -103,12 +105,22 @@ const Histogram = () => {
   const[frameworks, setFrameworks] = React.useState(jsonData.frameworks);
   const[webFrameworks, setWebFrameworks] = React.useState(jsonData.webFrameworks);
   // const [topics, setTopics] = React.useState(['Languages', 'Frameworks', 'Web Frameworks'])
-  const [topics, setTopics] = React.useState(['Languages', 'Frameworks'])
+  const [topics, setTopics] = React.useState([ 'Frameworks','Languages'])
 
   const [topicIndex, setTopicIndex] = React.useState(0);
   const xOffsets = [0, 0.7853, 1.5707, 2.3559, 3.1415];
   const [currentTopic, setCurrentTopic] = React.useState('Languages');
   const [currentData, setCurrentData] = React.useState([]);
+
+  useEffect(()=>{
+      if(currentTopic == 'Languages'){
+        setCyclicData(languages);
+      }
+      else if(currentTopic == 'Frameworks'){
+        setCyclicData(frameworks);
+      }
+  })
+
 
 // Yay! Algorithm for cycling through topics
   const cycleTopics = () =>{
@@ -120,12 +132,6 @@ const Histogram = () => {
     setCurrentTopic(currentTopic);
     setTopics(bidirectionalQueue);
 
-    if(currentTopic == 'Languages'){
-      setCyclicData(languages);
-    }
-    else if(currentTopic == 'Frameworks'){
-      setCyclicData(frameworks);
-    }
     // else if(currentTopic == 'Web Frameworks'){
     //   setCyclicData(webFrameworks);
     // }

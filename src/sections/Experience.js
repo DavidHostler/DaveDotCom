@@ -4,7 +4,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import Header from "../Header";
 const Experience = () => {
     return(
-    <div style={{backgroundColor:'grey'}}>
+    <div style={{backgroundColor:'rgb(96, 96, 96)'}}>
         <Header/>
     <VerticalTimeline>
         <VerticalTimelineElement
