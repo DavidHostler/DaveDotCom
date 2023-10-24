@@ -23,7 +23,8 @@ const spaceStyle = {
 };
 
 const barStyle = {
-    background: '#00cc00',
+    // background: '#00cc00',
+    background:'rgb(33, 200, 243)',
     transition: '0.3s',
     columnFill: 'auto'
 
