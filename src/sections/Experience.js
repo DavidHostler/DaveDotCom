@@ -4,7 +4,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import Header from "../Header";
 const Experience = () => {
     return(
-    <div style={{backgroundColor:'black'}}>
+    <div style={{backgroundColor:'grey'}}>
         <Header/>
     <VerticalTimeline>
         <VerticalTimelineElement
@@ -15,20 +15,32 @@ const Experience = () => {
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
             // icon={<WorkIcon />}
         >
-            <h3 className="vertical-timeline-element-title">Machine Learning Engineer</h3>
+            <h3 className="vertical-timeline-element-title">Machine Learning Engineer (Consulting)</h3>
             {/* <h3 className="vertical-timeline-element-title">EquoAI </h3> */}
 
             <h4 className="vertical-timeline-element-subtitle">EquoAI</h4>
             <p>
-                Trained, tested and deployed models to production.
+                Trained, tested and deployed models to production, and developed event-driven software to monitor model quality.
                 Designed and built Vector Store for RAG and event-driven AI Chat system. 
+                Performs consultation for other startups.
+                
                 
             </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2010 - 2011"
+            date="2022 - 2023"
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            // className="vertical-timeline-element--work"
+            // // contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            // // contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            // date="2023 - present"
+            // // iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            // iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+
+
+            
+            
             // icon={<WorkIcon />}
         >
             <h3 className="vertical-timeline-element-title">Software Engineer and CTO</h3>
@@ -38,11 +50,13 @@ const Experience = () => {
                 Developed deep learning models using biometric verification to discourage 
                 plagiarism in colleges.
                 Managed version control systems, and led company standups and code reviews.
+                Participated in Machine Learning research with graduate students through the Vector 
+                Institute and TuskML fireside chat.
             </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2008 - 2010"
+            date="2021 - 2022"
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
             // icon={<WorkIcon />}
         >
@@ -54,22 +68,8 @@ const Experience = () => {
             </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2006 - 2008"
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            // icon={<WorkIcon />}
-        >
-            <h3 className="vertical-timeline-element-title">Research Assistant, Machine Learning</h3>
-            <h4 className="vertical-timeline-element-subtitle">University of Toronto</h4>
-            <p>
-            Designed and implemented deep learning models to act as functional approximators of 
-            the probability distribution functions of valence electrons. Research focused on using 
-            solid state physics and quantum mechanics to optimize battery development.
-            </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            date="April 2013"
+            date="December 2020"
             iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
             // icon={<SchoolIcon />}
         >
@@ -82,8 +82,23 @@ const Experience = () => {
             </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2020 - 2021"
+            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            // icon={<WorkIcon />}
+        >
+            <h3 className="vertical-timeline-element-title">Research Assistant, Machine Learning</h3>
+            <h4 className="vertical-timeline-element-subtitle">University of Toronto</h4>
+            <p>
+            Designed and implemented deep learning models to act as functional approximators of 
+            the probability distribution functions of valence electrons. Research focused on using 
+            solid state physics and quantum mechanics to optimize battery development.
+            </p>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            date="April 2013"
+            date="April 2020"
             iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
             // icon={<SchoolIcon />}
         >
@@ -97,7 +112,7 @@ const Experience = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            date="April 2013"
+            date="September 2019"
             iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
             // icon={<SchoolIcon />}
         >
@@ -110,7 +125,7 @@ const Experience = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            date="November 2012"
+            date="September 2018 - April 2019"
             iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
             // icon={<SchoolIcon />}
         >
@@ -120,6 +135,9 @@ const Experience = () => {
             Taught tutorials and lab practicals, in addition to marking course work.
             Courses served include Introduction to Physics for Life Sciences, Multivariable Calculus, 
             Introduction to Astrophysics and Introduction to Astronomy.
+
+            Developed advanced understanding of deep mathematical topics through teaching,
+            which would become important for later roles.
             </p>
         </VerticalTimelineElement>
         

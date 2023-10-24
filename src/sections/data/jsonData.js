@@ -28,5 +28,85 @@ export default {
           level:45,
           skill:'Kafka'
         }
-      ]
+      ],
+      programmingLanguages:[
+
+      {
+        level:95,
+        skill:'Python'
+      },
+      {
+        level:75,
+        skill:'C++'
+      },
+      {
+        level:70,
+        skill:'Java'
+      },
+      {
+        level:90,
+        skill:'Javascript'
+      },
+      {
+        level:92,
+        skill:'SQL'
+      },
+      {
+        level:75,
+        skill:'C#'
+      },
+      {
+        level:75,
+        skill:'React'
+      },
+      {
+        level:85,
+        skill:'Django'
+      },
+      {
+        level:50,
+        skill:'Flask'
+      },
+      {
+        level:40,
+        skill:'Spring Boot'
+      },
+      {
+        level:78,
+        skill:'.NET'
+      },
+      {
+        level:75,
+        skill:'Node'
+      },
+      
+
+    ],
+    webFrameworks: [{
+        level:75,
+        skill:'React'
+      },
+      {
+        level:85,
+        skill:'Django'
+      },
+      {
+        level:50,
+        skill:'Flask'
+      },
+      {
+        level:40,
+        skill:'Spring Boot'
+      },
+      {
+        level:78,
+        skill:'.NET'
+      },
+      {
+        level:75,
+        skill:'Node'
+      },
+      
+    ],
+      
 }

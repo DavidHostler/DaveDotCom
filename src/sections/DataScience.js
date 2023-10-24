@@ -50,7 +50,7 @@ const DataScience = () =>{
          </li>);
     return(
         <div 
-        // style={{backgroundColor:'black', color:'white', height:'100%'}}
+        style={{backgroundColor:'black', color:'white', height:'100%'}}
         >
             <Header/>
             <h2>Skill Histogram</h2>
