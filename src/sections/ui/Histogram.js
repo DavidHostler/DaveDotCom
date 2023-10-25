@@ -6,7 +6,7 @@ import Button from './Button';
 import jsonData from '../data/jsonData';
 // ---------------------------------
 const containerStyle = {
-    padding: '0 0.5px',
+    padding: '0.0 0.1vw',
     // background: '#ffffff',
     flex: '1',
     color:'white',

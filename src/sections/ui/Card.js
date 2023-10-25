@@ -17,7 +17,7 @@ const Card = (props) =>{
             <img 
             src={props.image} 
             
-             style={{width:'100%', height:'35vh'}}
+             style={{width:'27.5vw', height:'35vh'}}
             />
             {/* <h1 className="price">View Explanation</h1> */}
             <p className="price">{props.description}</p>

@@ -28,6 +28,7 @@ const About = () => {
                 Interests include machine learning, object oriented programming, system design, 
                 automation and heavy metal music.
                 </p>
+                
                 <p className='paragraph'>
                     Thanks for visiting :)
                 </p>

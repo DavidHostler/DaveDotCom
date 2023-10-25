@@ -8,7 +8,8 @@ const ProjectCard = (props) =>{
             }}>
             <ul>
                 <img 
-                style={{width:'100%', height:'8.5vw'}}
+                style={{width:'100%', height:'8.5vh'}}
+                // style={{width:'100%', height:'8.5vh'}}
                 src={'https://www.wellingtonadvertiser.com/wp-content/uploads/2023/04/Holland-LopWEB-scaled.jpg'}/>
                 <h1>{props.name}</h1>
                 <h3>{props.description}</h3>

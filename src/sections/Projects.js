@@ -9,14 +9,14 @@ const data = [
         name:'Natty-Or-Not',
         imagePath:'https://staticg.sportskeeda.com/editor/2022/08/471f9-16609079272704-1920.jpg',
         github:'https://github.com/DavidHostler/NattyOrNot',
-        description:'Developed a full-stack application for identifying steroid use in bodybuilders using image data of physiques.',
+        description:'Convolutional neural net trained to detect steroid use just from physique pictures',
         procedure:'Built Python webscraper with Beautifulsoup, used it to scrape Google Images for physiques of various athletes. Preprocessed and cleaned data into training and validation sets, then built and trained a convolutional neural network in Tensorflow to identify users with a high-probability of steroid use. Built ReactJS front end, and Flask REST API to enable users to upload the image to a stateless Python backend. Wrote and tested HTTP Javascript request logic to display API response based on neural network prediction.'
     },
     {
         name:'Autopilot',
         imagePath:'https://png.pngtree.com/background/20230417/original/pngtree-robot-future-world-cyberpunk-style-background-picture-image_2446170.jpg',
         github:'https://github.com/DavidHostler/AutopilotAI',
-        description:'Self-driving AI bot for driving based videogames',
+        description:'Self-driving AI bot for driving based videogames. Built with multithreaded model deployment.',
         procedure:"Wrote a Python keylogger. Got permission to install on friend's RTX 2080 gaming PC. Wrote data pipeline to collect timestamps of user keystrokes for training the AI. In order to optimize training, implemented training data as a Martingale from stochastic calculus as used in finance to make predictions during options trading."
     },
     {
