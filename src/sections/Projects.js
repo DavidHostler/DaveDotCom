@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ProjectCard from "./ui/ProjectCard";
 import Header from "../Header";
 import Card from "./ui/Card";
@@ -39,6 +39,19 @@ const data = [
 ];
 
 const Projects = () =>{
+    const [matches, setMatches] = useState(//Mobile Responsive Code
+    window.matchMedia("(min-width: 768px)").matches
+    )
+    const [imgWidthLarge, setimgWidthLarge] = useState('27.5vw');//{width:'27.5vw', height:'35vh'
+    const [imgHeightLarge, setimgHeightLarge] = useState('35vh');
+
+    const [imgWidthSmall, setimgWidthSmall] = useState('13.5vw');//{width:'27.5vw', height:'35vh'
+    const [imgHeightSmall, setimgHeightSmall] = useState('17vh');
+    useEffect(() => {//Set css based on windowSize
+        window
+        .matchMedia("(min-width: 768px)")
+        .addEventListener('change', e => setMatches( e.matches ));
+      }, []);
     return(
         <div>
             <Header/>
@@ -49,17 +62,37 @@ const Projects = () =>{
             {/* <ProjectCard/> */}
             {/* <Card/> */}
             <ul>
-            {data.map((item, key) => {
+            {/* Render a list of cards using Large dimensions if match == true. 
+            else render list of cards using Small dimensions for mobile. */}
+            {matches && data.map((item, key) => {
                     return <li key={key}>
                         <Card 
                         name={item.name}
                         description={item.description}
                         image={item.imagePath}
                         github={item.github}
+                        width={imgWidthLarge}
+                        height={imgHeightLarge}
                         />
                     </li>
                 }
-            )}
+            )
+            || 
+            !matches && data.map((item, key) => {
+                return <li key={key}>
+                    <Card 
+                    name={item.name}
+                    description={item.description}
+                    image={item.imagePath}
+                    github={item.github}
+                    width={imgWidthSmall}
+                    height={imgHeightSmall}
+                    />
+                </li>
+            }
+        )
+            
+            }
             </ul>
                    
         </div>
