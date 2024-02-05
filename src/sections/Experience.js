@@ -16,16 +16,23 @@ const Experience = () => {
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
             // icon={<WorkIcon />}
         >
-            <h3 className="vertical-timeline-element-title">Machine Learning Engineer (Consulting)</h3>
+            <h3 className="vertical-timeline-element-title">Co-Founder and Chief Executive Officer</h3>
             {/* <h3 className="vertical-timeline-element-title">EquoAI </h3> */}
 
             <h4 className="vertical-timeline-element-subtitle">EquoAI</h4>
             <p>
-                Trained, tested and deployed models to production, and developed event-driven software to monitor model quality.
-                Designed and built Vector Store for RAG and event-driven AI Chat system. 
-                Performs consultation for other startups.
-                
-                
+                Principal founder and Engineer of EquoAI, a startup focused on reducing friction in LLM deployments 
+                by mitigating security and quality risks. 
+                Architected fault-tolerant Vector Database for developers using Approximate Nearest Neighbours algorithm.
+                Designed highly efficient RAG-as-a-service solution to optimize LLM applications in production via 
+                sophisticated dynamic programming techniques, in addition to developing neural Guardrails to protect end users and sensitive data in LLM-based apps. 
+                Handled external and marketing communications, and provided demos to clients. 
+                Attended all major ML-centric conferences to promote EquoAI, and led iteration of developer-facing products 
+                using Software Product Management principles.
+                Provided consultations for other startups and businesses, recruited team members, hosted community events, 
+                and coordinated community culture.
+                Led investigation into areas of practical AI Safety and Security, in mission to enable Acceleration of LLM technology 
+                in the enterprise.
             </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -44,7 +51,7 @@ const Experience = () => {
             
             // icon={<WorkIcon />}
         >
-            <h3 className="vertical-timeline-element-title">Software Engineer and CTO</h3>
+            <h3 className="vertical-timeline-element-title">Chief Technology Officer</h3>
             {/* <h3 className="vertical-timeline-element-title">PreemptorAI</h3> */}
             <h4 className="vertical-timeline-element-subtitle">PreemptorAI</h4>
             <p>
@@ -52,7 +59,10 @@ const Experience = () => {
                 plagiarism in colleges.
                 Managed version control systems, and led company standups and code reviews.
                 Participated in Machine Learning research with graduate students through the Vector 
-                Institute and TuskML fireside chat.
+                Institute and TuskML fireside chat. 
+                Managed stakeholders, cross-functional teams, translated business requirements into 
+                product. Performed multiple roles related to Software/Machine Learning Engineering, 
+                Product Management and Executive Team Leadership.
             </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -92,8 +102,8 @@ const Experience = () => {
             <h4 className="vertical-timeline-element-subtitle">University of Toronto</h4>
             <p>
             Designed and implemented deep learning models to act as functional approximators of 
-            the probability distribution functions of valence electrons. Research focused on using 
-            solid state physics and quantum mechanics to optimize battery development.
+            the probability density functions/wave functions of valence electrons across various materials.
+            Research focused on using solid state physics and quantum mechanics to optimize battery development.
             </p>
         </VerticalTimelineElement>
 

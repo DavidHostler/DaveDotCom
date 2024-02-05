@@ -1,38 +1,25 @@
 import React from "react";
-import './ui.css';
-const ProjectCard = (props) =>{
-    return(
-        <div style={{
-            borderRadius:'15px',
-            width:'25%',
-            }}>
-            <ul>
-                <img 
-                style={{width:'100%', height:'8.5vh'}}
-                // style={{width:'100%', height:'8.5vh'}}
-                src={'https://www.wellingtonadvertiser.com/wp-content/uploads/2023/04/Holland-LopWEB-scaled.jpg'}/>
-                <h1>{props.name}</h1>
-                <h3>{props.description}</h3>
-            </ul>
-        </div>
-    )
-}
+import {Card, CardHeader, CardBody, Image} from "@nextui-org/react";
 
-// const ProjectCard = () =>{
-//     return(
-//         <div>
-//             <h2 style={{textAlign:"center"}}>Product Card</h2>
-//             <div className="card">
-//             <img src="https://www.w3schools.com/w3images/jeans3.jpg" 
-//             alt="Denim Jeans" style={{width:'100%'}}
-//             />
-//             <h1>Tailored Jeans</h1>
-//             <p className="price">$19.99</p>
-//             <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-//             <p><button>Add to Cart</button></p>
-//             </div>
-//         </div>
-//     );
-// }
-// export default ProjectCard;
-export default ProjectCard;
+export default function ProjectCard() {
+  return (
+    
+    <Card className="py-4">
+            <div style={{backgroundColor:'gray', width:'20.85vw'}}>
+            <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+                <p className="text-tiny uppercase font-bold">Daily Mix</p>
+                <small className="text-default-500">12 Tracks</small>
+                <h4 className="font-bold text-large">Frontend Radio</h4>
+            </CardHeader>
+            <CardBody className="overflow-visible py-2">
+                <Image
+                alt="Card background"
+                className="object-cover rounded-xl"
+                src='https://staticg.sportskeeda.com/editor/2022/08/471f9-16609079272704-1920.jpg'
+                width={270}
+                />
+            </CardBody>
+        </div>
+    </Card>
+  );
+}

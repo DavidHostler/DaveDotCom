@@ -7,6 +7,7 @@ import About from './sections/About';
 import Projects from './sections/Projects';
 import DataScience from './sections/DataScience';
 import Experience from './sections/Experience';
+import ProjectCard from './sections/ui/ProjectCard';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="projects" element={ <Projects/> } />
         <Route path="skills" element={ <DataScience/> } />
         <Route path="experience" element={<Experience/>}/>
+        <Route path="test-project" element={<ProjectCard/>}/>
       </Routes>
     </div>
   );

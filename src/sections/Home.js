@@ -2,18 +2,24 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../Header';
 import './sections.css';
+import Typing from './ui/Typing';
+
 const Home = () => {
     return(
         <div 
         className='home'
         >
             <Header/>
+            
             <h1 
             className='name'
             >David Hostler</h1>
 
             {/* <h2>Machine Learning Engineer</h2> */}
-            <h2>Software Engineer</h2>
+            {/* <h2>Software Engineer</h2> */}
+            <div style={{position:'relative', left:'32.5vw'}}>
+                <Typing/>
+            </div>
             <ul style={{paddingLeft:'32.5vw', backgroundColor:'black'}}>
             <li
             ><a href='https://github.com/DavidHostler'><h3>Github</h3></a></li>

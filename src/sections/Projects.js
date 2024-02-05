@@ -45,7 +45,7 @@ const Projects = () =>{
     const [imgWidthLarge, setimgWidthLarge] = useState('27.5vw');//{width:'27.5vw', height:'35vh'
     const [imgHeightLarge, setimgHeightLarge] = useState('35vh');
 
-    const [imgWidthSmall, setimgWidthSmall] = useState('13.5vw');//{width:'27.5vw', height:'35vh'
+    const [imgWidthSmall, setimgWidthSmall] = useState('27.5vw');//{width:'27.5vw', height:'35vh'
     const [imgHeightSmall, setimgHeightSmall] = useState('17vh');
     useEffect(() => {//Set css based on windowSize
         window
